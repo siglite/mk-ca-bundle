@@ -9,9 +9,9 @@ dump() {
 }
 
 # Download ca-bundle from curl
-curl -fsSL -o curl.pem https://curl.haxx.se/ca/cacert.pem
+curl -fsSL -o cache/curl.pem https://curl.haxx.se/ca/cacert.pem
 
-find . -name "*.pem" | while read -r cert
+find . -name "*.pem" -o -name "*.cer" | while read -r cert
 do
     dump $cert
 done
