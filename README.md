@@ -1,5 +1,9 @@
 # mk-ca-bundle
-Make ca-bundle.pem for broken FTPS server
+Make ca-bundle.pem for broken FTPS servers.
+
+### Broken FTPS server
+
+- \*.xrea.com (missing intermediate certificate)
 
 ## Usage
 
